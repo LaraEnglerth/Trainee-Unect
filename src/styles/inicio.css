@@ -1,0 +1,119 @@
+#inicio {
+    position: relative;
+    display: flex;
+}
+#escrita-inicio {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 35% ; 
+    display: flex;
+    flex-direction: column;
+    gap:10px; 
+    margin-top: 2%; 
+}
+#escrita-inicio .title-inicio {
+    font-size: 4rem;
+    color: #FFFFFF;
+    margin:0;
+}
+#escrita-inicio .description-inicio {
+    font-size: 2rem;
+    color:#FFFFFF;
+    margin:0 0 30px 0;
+}
+.link{
+    text-decoration: none;
+}
+#banner-inicio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+}
+#banner-inicio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100%; 
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(.6);
+}
+.btn-default-inicio {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 283px;
+    height: 57px;
+    background-color: #8f542e;
+    border-radius: 8px;
+    padding: 12px 32px 12px 32px;
+    font-weight: 1000;
+    cursor: pointer;
+    color:#FFFFFF;
+    margin-left: 0%;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.btn-default-inicio:hover{
+    color: #ffff;
+    box-shadow: 1px 1px 3px black;
+}
+
+
+@media screen and (max-width: 980px) {
+
+    #inicio {
+        position: relative;
+        display: flex;
+        height: 230px; 
+        margin: 0;
+        padding: 0;
+    }
+
+    #banner-inicio img {
+        position: absolute;
+        top: 0;
+        left: -50%; /*trazendo mais a direita*/
+        width: 150vw; 
+        height: 242px; 
+        object-fit: cover;
+        z-index: -1;
+        filter: brightness(.6); /*diminuindo luminosidade*/
+        transform: scale(1.4); 
+    }
+
+    #escrita-inicio {
+        transform:none;  
+        top: auto;
+        left: auto;
+        text-align: center;
+        margin-top: 20px;
+        width: 70%;
+    } 
+    #escrita-inicio .title-inicio{
+        font-size: 28px;
+        text-align: left;
+        line-height: 1.2; 
+        width: 100%;
+        overflow: visible; 
+        max-width: none; 
+        word-wrap: break-word; 
+        margin: 5% 5% 10px 5%;
+    }
+    #escrita-inicio .description-inicio {
+        display: none; 
+    }
+    .btn-default-inicio{
+        margin-left: 5%;
+    }
+}
+
