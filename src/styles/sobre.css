@@ -2,6 +2,7 @@ body{
     margin:0;
     padding:0;
     overflow-x: hidden;
+    font-family: "Cormorant Garamond", serif;
 }
     
 #sobre{
@@ -16,12 +17,13 @@ body{
 .sobre-texto{
     width: 47% ;
     background-color: #ffff;
+    font-family: "Cormorant Garamond", serif;
     padding: 30px;
 }
 
 .sobre-texto .titulo{
     font-size: 40px;
-    font-family:  Garamond; 
+    font-family: "Cormorant Garamond", serif;
     position: relative;
 }
 .sobre-texto .background-sobre{

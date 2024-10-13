@@ -3,6 +3,7 @@ header {
     padding: 28px 0%;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
 }
 #navbar {
     width: 100%;
@@ -33,6 +34,7 @@ header {
     align-items: center;
     padding: 0px;
     margin: 0 0 0 4%;
+    font-family: "Cormorant Garamond", serif;
 }
 .nav-item a {
     text-decoration: none;
@@ -54,8 +56,8 @@ header {
     display: flex;
     align-items: center;
     width: 138px;
-    height: 70px;
-    top: 7px;
+    height: 50px;
+    margin-top: 15px;
 }
 .desc_logo{
     color:#FFFFFF;
@@ -132,6 +134,7 @@ header {
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
+        margin-right: 20px;
     }
 
     #mobile_btn i {
